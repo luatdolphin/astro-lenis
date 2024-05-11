@@ -50,7 +50,7 @@ export default defineConfig({
 
 ### Configuration
 
-This package is meant to be a simple drop-in smooth-scroll solution using the default Lenis configuration. If you need a more complex solution visit [Lenis](https://github.com/darkroomengineering/lenis).
+This package is meant to be a simple drop-in smooth-scroll solution using the default Lenis configuration. If you need a more complex solution visit the [Lenis Github](https://github.com/darkroomengineering/lenis).
 
 ## Licensing
 
@@ -58,6 +58,6 @@ This package is meant to be a simple drop-in smooth-scroll solution using the de
 
 ## Acknowledgements
 
-@Bryceguy for helping me out so much with this in the discord
-@Florian for making the template
+@Bryceguy for helping me out so much with this in the discord<br/>
+@Florian for making the template<br/>
 @Houston because you're cute

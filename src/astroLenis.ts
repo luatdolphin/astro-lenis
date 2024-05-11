@@ -21,7 +21,7 @@ export const astroLenis = defineIntegration({
 
             requestAnimationFrame(raf);
           `)
-          injectScript('page-ssr', absoluteStylesPath)
+          injectScript('page-ssr', JSON.stringify(absoluteStylesPath))
         },
       },
 		};
