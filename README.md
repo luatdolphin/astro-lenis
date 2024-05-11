@@ -1,12 +1,8 @@
 # `astro-lenis`
 
-This is an [Astro integration](https://docs.astro.build/en/guides/integrations-guide/) that adds simple performant smooth scrolling with [Lenis](https://lenis.darkroom.engineering/)
+This is an [Astro integration](https://docs.astro.build/en/guides/integrations-guide/) that adds simple and performant smooth-scrolling with [Lenis](https://lenis.darkroom.engineering/).
 
 ## Usage
-
-### Prerequisites
-
-TODO:
 
 ### Installation
 
@@ -29,18 +25,18 @@ Or install it **manually**:
 1. Install the required dependencies
 
 ```bash
-npm install package-name
+npm install astro-lenis
 ```
 
 ```bash
-pnpm add package-name
+pnpm add astro-lenis
 ```
 
 ```bash
-yarn add package-name
+yarn add astro-lenis
 ```
 
-2. Add the integration to your astro config
+2. Add the integration to your `astro.config.mjs`
 
 ```diff
 +import astroLenis from "astro-lenis";
@@ -54,7 +50,22 @@ export default defineConfig({
 
 ### Configuration
 
-TODO:configuration
+This package is meant to be a simple drop-in smooth-scroll solution and does not include all of Lenis' configuration options. If you need a more complex solution visit [Lenis](https://lenis.darkroom.engineering/) to set it up in your project without the integration.
+
+```js
+// astro.config.mjs
+
+import { defineConfig } from 'astro/config';
+import astroLenis from 'astro-lenis';
+
+// https://astro.build/config
+export default defineConfig({
+  integrations: [astroLenis({
+    duration: number, // Duration of the scroll animation in seconds
+    syncTouch: boolean, // Controls whether to use lenis on devices with native smooth scroll like smartphones. Defaulted to false since native smooth scrolling is more performant
+})],
+});
+```
 
 ## Licensing
 
@@ -62,4 +73,6 @@ TODO:configuration
 
 ## Acknowledgements
 
-TODO:
+@Bryceguy for helping me out so much with this in the discord
+@Florian for making the template
+@Houston because you're cute

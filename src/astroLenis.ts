@@ -10,7 +10,6 @@ export const astroLenis = defineIntegration({
   optionsSchema: z.object({
     duration: z.number().optional(),
     syncTouch: z.boolean().default(false),
-    smoothWheel: z.boolean().optional(),
   }),
 	setup({ options }) {
 		return {
