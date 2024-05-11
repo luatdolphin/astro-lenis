@@ -1,6 +1,6 @@
 {
 	"name": "astro-lenis",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "A simple drop in lenis integration for Astro. Get smooth or die trying",
 	"author": {
 		"email": "matthew@majicwebdesign.com",
