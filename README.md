@@ -58,11 +58,13 @@ This package is meant to be a simple drop-in smooth-scroll solution and does not
 import { defineConfig } from 'astro/config';
 import astroLenis from 'astro-lenis';
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [astroLenis({
-    duration: number, // Duration of the scroll animation in seconds
-    syncTouch: boolean, // Controls whether to use lenis on devices with native smooth scroll like smartphones. Defaulted to false since native smooth scrolling is more performant
+    duration: number, /* Optional. Duration of the scroll animation in seconds */
+    syncTouch: boolean, /* Optional. Controls whether to use lenis on devices 
+                           with native smooth scroll like smartphones. 
+                           Defaulted to false since native smooth scrolling 
+                           is more performant */
 })],
 });
 ```
