@@ -50,24 +50,7 @@ export default defineConfig({
 
 ### Configuration
 
-This package is meant to be a simple drop-in smooth-scroll solution and does not include all of Lenis' configuration options. If you need a more complex solution visit [Lenis](https://lenis.darkroom.engineering/) to set it up in your project without the integration.
-
-```js
-// astro.config.mjs
-
-import { defineConfig } from 'astro/config';
-import astroLenis from 'astro-lenis';
-
-export default defineConfig({
-  integrations: [astroLenis({
-    duration: number, /* Optional. Duration of the scroll animation in seconds */
-    syncTouch: boolean, /* Optional. Controls whether to use lenis on devices 
-                           with native smooth scroll like smartphones. 
-                           Defaulted to false since native smooth scrolling 
-                           is more performant */
-})],
-});
-```
+This package is meant to be a simple drop-in smooth-scroll solution using the default Lenis configuration. If you need a more complex solution visit [Lenis](https://github.com/darkroomengineering/lenis).
 
 ## Licensing
 
