@@ -37,7 +37,8 @@
 	},
 	"dependencies": {
 		"astro-integration-kit": "^0.13.2",
-		"lenis": "^1.0.45"
+		"lenis": "^1.0.45",
+		"typescript": "^5.4.5"
 	},
 	"devDependencies": {
 		"tsup": "^8.0.2"
