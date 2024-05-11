@@ -39,11 +39,11 @@ yarn add astro-lenis
 2. Add the integration to your `astro.config.mjs`
 
 ```diff
-+import astroLenis from "astro-lenis";
++import lenis from "astro-lenis";
 
 export default defineConfig({
   integrations: [
-+    astroLenis(),
++    lenis(),
   ],
 });
 ```
